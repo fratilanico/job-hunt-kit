@@ -1,0 +1,28 @@
+/* editorial: white ground, near-black ink, one oxblood accent, serif display + clean sans body.
+   Communications, marketing, content, PR, director-level comms. */
+:root {
+  --page-bg: #ffffff; --page-bg-alt: #ffffff; --page-pad-y: 15mm; --page-pad-x: 18mm;
+  --ink: #2b2b2b; --ink-strong: #141414; --ink-muted: #555555; --ink-faint: #8a8a8a;
+  --font-body: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "DejaVu Serif", serif;
+  --font-label: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  --font-title: var(--font-display); --font-heading: var(--font-display); --font-quote: var(--font-display);
+  --body-size: 9.4pt; --line-height: 1.52; --label-weight: bold; --label-tracking: .3px; --label-transform: uppercase;
+  --line: #d9d4d0; --line-soft: #ebe7e4;
+  --accent: #7b1e2e;
+  --band-bg: transparent; --band-ink: inherit; --header-pad-bottom: 0mm;
+  --name-ink: #141414; --name-size: 30pt; --name-weight: normal; --name-tracking: -.3px; --name-transform: none;
+  --role-pad: 0; --role-border: transparent; --radius-sm: 0; --role-bg: transparent; --role-ink: var(--accent); --headline-transform: uppercase;
+  --role-dot-display: none; --role-dot-glow: none;
+  --contact-ink: #555555; --contact-sep: "  |  "; --contact-sep-ink: #b9b0ab; --rule-gap: 5mm;
+  --section-gap: 7mm; --title-ink: #141414; --title-weight: normal; --title-size: 14pt; --title-tracking: 0; --title-transform: none;
+  --num-display: inline; --num-ink: var(--accent); --num-sep: ". "; --title-rule-display: block;
+  --grid-gap: 4mm 7mm; --card-pad: 2.5mm 0 0; --card-border: 0; --card-top-border: 2px solid var(--accent); --radius: 0;
+  --surface: transparent; --card-shadow: none; --card-title-ink: #141414;
+  --tag-border: #d9d4d0; --tag-bg: transparent; --tag-ink: #444444; --tag-prefix: "";
+  --heading-tracking: 0; --heading-transform: none; --project-mark: ""; --badge-bg: transparent; --badge-ink: var(--accent);
+  --bullet: "\2022"; --bullet-ink: var(--accent);
+  --timeline-pad: 0; --timeline-line: 0; --roleline-ink: var(--accent); --roleline-weight: bold;
+  --footer-divider: #e2ddd9;
+}
+.project { border-bottom: 1px solid var(--line-soft); padding-bottom: 3mm; }

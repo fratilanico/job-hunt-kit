@@ -1,0 +1,30 @@
+/* studio: bold cobalt header band, geometric sans, slightly playful cards.
+   Product, design, creative, startup roles. */
+:root {
+  --page-bg: #ffffff; --page-bg-alt: #ffffff; --page-pad-y: 13mm; --page-pad-x: 16mm;
+  --ink: #26262b; --ink-strong: #111114; --ink-muted: #585a66; --ink-faint: #8b8d99;
+  --font-body: "Avenir Next", Avenir, "Century Gothic", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Avenir Next", Avenir, Futura, "Century Gothic", "Segoe UI", Arial, sans-serif;
+  --font-label: "Avenir Next", Avenir, "Century Gothic", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-title: var(--font-display); --font-heading: var(--font-display); --font-quote: var(--font-body);
+  --body-size: 9.2pt; --line-height: 1.5; --label-weight: 600; --label-tracking: .3px; --label-transform: none;
+  --line: #dde1ee; --line-soft: #eceff7;
+  --accent: #2747d6;
+  --band-bg: var(--accent); --band-ink: #ffffff; --header-pad-bottom: 8mm;
+  --name-ink: #ffffff; --name-size: 29pt; --name-weight: bold; --name-tracking: -.6px; --name-transform: none;
+  --role-pad: 1.8mm 3.4mm; --role-border: #ffffff; --radius-sm: 20px; --role-bg: #ffffff; --role-ink: var(--accent); --headline-transform: none;
+  --role-dot-display: inline-block; --role-dot-glow: none;
+  --contact-ink: color-mix(in srgb, var(--accent) 12%, #fff); --contact-sep: "   \2022   "; --contact-sep-ink: color-mix(in srgb, var(--accent) 45%, #fff); --rule-gap: 0mm;
+  --section-gap: 6.5mm; --title-ink: #111114; --title-weight: bold; --title-size: 12.5pt; --title-tracking: -.2px; --title-transform: none;
+  --num-display: inline; --num-ink: var(--accent); --num-sep: " "; --title-rule-display: none;
+  --grid-gap: 3.5mm; --card-pad: 4mm 4.4mm; --card-border: 0; --card-top-border: 0; --radius: 9px;
+  --surface: color-mix(in srgb, var(--accent) 6%, #fff); --card-shadow: none; --card-title-ink: var(--accent);
+  --tag-border: color-mix(in srgb, var(--accent) 22%, #fff); --tag-bg: color-mix(in srgb, var(--accent) 8%, #fff); --tag-ink: var(--accent); --tag-prefix: "";
+  --heading-tracking: -.1px; --heading-transform: none; --project-mark: ""; --badge-bg: var(--accent); --badge-ink: #ffffff;
+  --bullet: "\25CF"; --bullet-ink: var(--accent);
+  --timeline-pad: 5mm; --timeline-line: 3px solid color-mix(in srgb, var(--accent) 14%, #fff); --roleline-ink: var(--accent); --roleline-weight: 600;
+  --footer-divider: #dde1ee;
+}
+.cv-header .headline::before { background: var(--accent); }
+.rule { background: transparent; margin: 0 0 3mm; }
+li::before { font-size: 6pt; top: 1.1mm; }

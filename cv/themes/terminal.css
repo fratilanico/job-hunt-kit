@@ -1,0 +1,26 @@
+/* terminal: dark ground, green accent, monospace labels. Engineering, AI, data, technical roles. */
+:root {
+  --page-bg: #111111; --page-bg-alt: #0b0b0b; --page-pad-y: 14mm; --page-pad-x: 17mm;
+  --ink: #c9c9c9; --ink-strong: #e6e6e6; --ink-muted: #939393; --ink-faint: #6f6f6f;
+  --font-body: Arial, Helvetica, "Liberation Sans", sans-serif;
+  --font-display: Arial, Helvetica, "Liberation Sans", sans-serif;
+  --font-label: Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace;
+  --font-title: var(--font-label); --font-heading: var(--font-label); --font-quote: var(--font-body);
+  --body-size: 9.3pt; --line-height: 1.5; --label-weight: bold; --label-tracking: .5px; --label-transform: uppercase;
+  --line: #343434; --line-soft: #2a2a2a;
+  --accent: #3dcf8e;
+  --band-bg: transparent; --band-ink: inherit; --header-pad-bottom: 0mm;
+  --name-ink: #ffffff; --name-size: 27pt; --name-weight: bold; --name-tracking: -1px; --name-transform: uppercase;
+  --role-pad: 2.6mm 3.6mm; --role-border: color-mix(in srgb, var(--accent) 55%, #000); --radius-sm: 2px; --role-bg: color-mix(in srgb, var(--accent) 18%, #0b0b0b); --role-ink: var(--accent); --headline-transform: uppercase;
+  --role-dot-display: inline-block; --role-dot-glow: none;
+  --contact-ink: #7a7a7a; --contact-sep: "   // "; --contact-sep-ink: var(--accent); --rule-gap: 5mm;
+  --section-gap: 6.5mm; --title-ink: #8a8a8a; --title-weight: bold; --title-size: 9pt; --title-tracking: .8px; --title-transform: uppercase;
+  --num-display: inline; --num-ink: var(--accent); --num-sep: "_"; --title-rule-display: block;
+  --grid-gap: 4.5mm; --card-pad: 4.2mm 4.6mm; --card-border: 1px solid #343434; --card-top-border: 1px solid color-mix(in srgb, var(--accent) 55%, #000); --radius: 5px;
+  --surface: #1b1b1b; --card-shadow: none; --card-title-ink: var(--accent);
+  --tag-border: #333333; --tag-bg: transparent; --tag-ink: #9a9a9a; --tag-prefix: "# ";
+  --heading-tracking: 0; --heading-transform: uppercase; --project-mark: "> "; --badge-bg: #292929; --badge-ink: #dddddd;
+  --bullet: "\25B8"; --bullet-ink: var(--accent);
+  --timeline-pad: 5mm; --timeline-line: 2px solid #333333; --roleline-ink: var(--accent); --roleline-weight: normal;
+  --footer-divider: color-mix(in srgb, var(--accent) 50%, #000);
+}

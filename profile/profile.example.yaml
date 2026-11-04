@@ -1,0 +1,168 @@
+# profile.example.yaml
+# Copy to profile/profile.yaml (git-ignored) and fill in, or run the onboarding
+# (/onboard in Claude Code, or ask Codex to "run the onboarding skill").
+# Every script and skill reads this file. Nothing personal lives anywhere else.
+# Answer honestly: these values are typed into real application forms.
+
+identity:
+  first_name: "First"
+  last_name: "Last"
+  preferred_name: ""              # optional, used in cover letters if set
+  email: "you@example.com"        # the inbox you check (and, if you allow it, the one Claude may read for ATS codes)
+  phone_international: "+44 7000 000000"
+  phone_local: "07000 000000"
+  phone_digits_only: "447000000000"   # some forms (Ashby number fields) reject "+" and spaces
+  linkedin: "https://www.linkedin.com/in/your-handle"
+  github: ""                      # optional
+  portfolio: ""                   # only a domain you control; never a chat or artifact link
+  address:
+    line1: ""
+    city: "London"
+    postcode: ""
+    country: "United Kingdom"
+
+location:
+  city: "London"
+  country: "United Kingdom"
+  # exact option text to pick in location autocompletes (Greenhouse, LinkedIn, Ashby)
+  form_location_option: "London, England, United Kingdom"
+  ashby_location_option: "London, Greater London, England, United Kingdom"
+  # where discovery searches
+  linkedin_search_location: "London, England, United Kingdom"
+  board_location_slug: "london"       # used in Reed / TotalJobs / CWJobs / CV-Library URLs
+  # a role passes the geo filter if its location matches allowed and not blocked
+  allowed_geo: ["london", "united kingdom", "\\buk\\b", "england", "remote"]
+  blocked_geo: ["united states", "\\busa?\\b", "canada", "india", "australia", "singapore", "germany", "france", "netherlands", "spain"]
+  english_only: true                  # skip postings written in another language
+
+work_rights:
+  authorised_to_work: true
+  needs_sponsorship_now: false
+  needs_sponsorship_future: false
+  status_text: "British citizen"      # e.g. "Settled status (EU Settlement Scheme)", "Graduate visa until 2027"
+  visa_dropdown_fallback: ""          # option to choose when a dropdown only lists visa types
+  citizenship: ""
+  share_code: ""                      # leave blank; Claude must never invent one
+
+work_type:
+  remote: true
+  hybrid: true
+  onsite: false                       # if false, never tick "Onsite / Office based"
+  hybrid_office_days_ok: true         # answer Yes to "can you be in the office N days a week" on hybrid roles
+  travel_percent_ok: 25
+  relocation: false
+
+employment:
+  permanent: true
+  contract: false
+  notice_period: "One month"          # e.g. "Immediately", "Two weeks", "Three months"
+  earliest_start: ""                  # leave blank to derive from notice period
+
+pay:
+  currency: "GBP"
+  perm_floor: 50000                   # skip permanent roles clearly advertised below this
+  day_rate_floor: 0                   # skip contracts below this (0 = not looking for contracts)
+  unknown_pay_ok: true                # apply when pay is not stated
+  numeric_salary_answer: 55000        # what to type into numeric "expected salary" fields
+  numeric_day_rate_answer: 0
+  salary_sentence: "Around GBP 55,000 base, open to discussing the full package."
+
+targets:
+  # job titles to search for (discovery runs one search per title per board)
+  titles:
+    - "Communications Manager"
+    - "Senior Communications Manager"
+  # a title must match at least one of these words (regex, case-insensitive) to be considered
+  title_include: ["communications", "comms", "pr\\b", "content"]
+  # titles with any of these are dropped
+  title_exclude: ["intern", "graduate", "junior", "assistant", "sales executive"]
+  seniority: ["manager", "senior", "lead"]      # used for CV theme choice and filtering
+  industries_in: []                              # optional preference, raises the score
+  industries_out: ["gambling"]                   # never apply
+  companies_avoid: []                            # never apply (current employer, places you would not work)
+  companies_review_first: []                     # always route to you for a decision, never auto-submit
+  # fit scoring: phrases in the job description you genuinely match (weight 1-5)
+  score_positive:
+    "stakeholder": 2
+    "internal communications": 3
+  # requirements you do not meet (penalty 1-5)
+  score_negative:
+    "phd": 4
+    "security clearance": 4
+  # extra employer ATS boards to sweep (Greenhouse / Lever / Ashby / Workable slug, e.g. the part after jobs.ashbyhq.com/)
+  company_boards: []
+
+experience:
+  total_years: 0
+  by_skill:                     # years per skill, computed from your CV dates; used for screener numbers
+    "Stakeholder management": 0
+  current_employer: ""
+  current_title: ""
+  education:
+    - degree: ""
+      institution: ""
+      year: ""
+      stem: false
+  certifications: []
+  languages:
+    - name: "English"
+      level: "Fluent"
+
+screeners:                      # standard answers; leave a value blank if unsure and Claude will ask you
+  driving_licence: ""           # "Yes, full UK licence" / "No"
+  access_to_vehicle: ""
+  unspent_convictions: ""       # only you answer this; Claude never guesses
+  security_clearance: "None"
+  willing_to_get_clearance: ""
+  previously_worked_here: "No"
+  referred_by_employee: "No"
+  relationship_with_employees: "No"
+  heard_about_us: "Job board"
+  demographics: "Prefer not to say"   # gender, ethnicity, disability, veteran, pronouns
+  adjustments_needed: "No"
+  interview_recording_consent: "Yes"
+  marketing_consent: false            # "keep me informed of future roles" style boxes
+  retain_cv_for_future: false         # tick only if the form will not submit without it
+
+cv:
+  source: "profile/cv.yaml"          # your CV content (created by onboarding from your existing CV)
+  theme: "editorial"                  # terminal | editorial | boardroom | studio | clarity
+  accent: ""                          # optional custom accent colour, e.g. "#1d4ed8"
+  max_pages: 3
+  default_pdf: "cv/out/cv.pdf"
+  variants: {}                        # lane -> pdf, e.g. { contract: "cv/out/cv-contract.pdf" }
+
+cover_letter:
+  voice_sample: "profile/voice-sample.md"   # a few paragraphs you actually wrote (emails, posts)
+  max_words: 180
+  sign_off: "First Last"
+
+accounts:                       # boards you are signed in to in your own browser (Claude never signs in)
+  linkedin: true
+  indeed: false
+  reed: false
+  totaljobs: false
+  cv_library: false
+  glassdoor: false
+
+autonomy: "confirm_each"        # draft_only | confirm_each | submit_within_rules
+
+limits:
+  company_cap: 2                # max applications per company, ever
+  daily_max: 25
+  easy_apply_daily: 20          # LinkedIn throttles around 25-30 per rolling day
+  allow_reading_inbox_for_codes: false   # true only if you allow Claude to read ATS email codes from your inbox
+
+captcha:
+  handoff: true                 # on a captcha, open a visible browser and wait for you to solve it
+  wait_minutes: 10
+  poll_seconds: 4
+
+notify:
+  agent_session: true           # the Claude Code / Codex session sends you the alert (phone app)
+  macos: true                   # local fallback: macOS notification banner
+  telegram: false               # optional, not recommended; needs TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID in .env
+
+paths:
+  data_dir: "data"
+  runs_dir: "runs"

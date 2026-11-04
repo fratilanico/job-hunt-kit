@@ -1,0 +1,29 @@
+/* boardroom: white ground, navy + slate, restrained, generous whitespace, thin rules.
+   Finance, consulting, legal, operations, executive roles. */
+:root {
+  --page-bg: #ffffff; --page-bg-alt: #ffffff; --page-pad-y: 17mm; --page-pad-x: 19mm;
+  --ink: #2d3540; --ink-strong: #15233a; --ink-muted: #5a6878; --ink-faint: #8c97a4;
+  --font-body: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  --font-label: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  --font-title: var(--font-label); --font-heading: var(--font-body); --font-quote: Georgia, "DejaVu Serif", serif;
+  --body-size: 9.2pt; --line-height: 1.55; --label-weight: bold; --label-tracking: .4px; --label-transform: uppercase;
+  --line: #cfd6de; --line-soft: #e6eaef;
+  --accent: #1b2f4b;
+  --band-bg: transparent; --band-ink: inherit; --header-pad-bottom: 0mm;
+  --name-ink: #15233a; --name-size: 25pt; --name-weight: 300; --name-tracking: .8px; --name-transform: uppercase;
+  --role-pad: 0; --role-border: transparent; --radius-sm: 0; --role-bg: transparent; --role-ink: #5a6878; --headline-transform: uppercase;
+  --role-dot-display: none; --role-dot-glow: none;
+  --contact-ink: #5a6878; --contact-sep: "   \00B7   "; --contact-sep-ink: #9aa5b1; --rule-gap: 6mm;
+  --section-gap: 8mm; --title-ink: var(--accent); --title-weight: bold; --title-size: 8.6pt; --title-tracking: .8px; --title-transform: uppercase;
+  --num-display: none; --num-ink: var(--accent); --num-sep: ""; --title-rule-display: block;
+  --grid-gap: 4mm 8mm; --card-pad: 0 0 0 3.5mm; --card-border: 0; --card-top-border: 0; --radius: 0;
+  --surface: transparent; --card-shadow: none; --card-title-ink: var(--accent);
+  --tag-border: #cfd6de; --tag-bg: transparent; --tag-ink: #5a6878; --tag-prefix: "";
+  --heading-tracking: 0; --heading-transform: none; --project-mark: ""; --badge-bg: transparent; --badge-ink: #5a6878;
+  --bullet: "\2013"; --bullet-ink: #8c97a4;
+  --timeline-pad: 0; --timeline-line: 0; --roleline-ink: var(--accent); --roleline-weight: bold;
+  --footer-divider: #e6eaef;
+}
+.skill { border-left: 1px solid var(--line); }
+.project { border-left: 1px solid var(--line); padding-left: 4mm; }

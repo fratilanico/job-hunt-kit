@@ -1,0 +1,28 @@
+/* clarity: light, high contrast, calm teal accent, maximum readability.
+   Healthcare, public sector, education, HR, people roles. */
+:root {
+  --page-bg: #ffffff; --page-bg-alt: #ffffff; --page-pad-y: 15mm; --page-pad-x: 17mm;
+  --ink: #1d1d1d; --ink-strong: #0b0b0b; --ink-muted: #3f4a48; --ink-faint: #6b7573;
+  --font-body: "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  --font-display: "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  --font-label: "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  --font-title: var(--font-label); --font-heading: var(--font-body); --font-quote: var(--font-body);
+  --body-size: 9.8pt; --line-height: 1.55; --label-weight: bold; --label-tracking: 0; --label-transform: none;
+  --line: color-mix(in srgb, var(--accent) 30%, #fff); --line-soft: color-mix(in srgb, var(--accent) 15%, #fff);
+  --accent: #0e6f62;
+  --band-bg: transparent; --band-ink: inherit; --header-pad-bottom: 0mm;
+  --name-ink: #0b0b0b; --name-size: 26pt; --name-weight: bold; --name-tracking: 0; --name-transform: none;
+  --role-pad: 0; --role-border: transparent; --radius-sm: 4px; --role-bg: transparent; --role-ink: var(--accent); --headline-transform: none;
+  --role-dot-display: none; --role-dot-glow: none;
+  --contact-ink: #3f4a48; --contact-sep: "   |   "; --contact-sep-ink: color-mix(in srgb, var(--accent) 50%, #fff); --rule-gap: 5mm;
+  --section-gap: 7mm; --title-ink: var(--accent); --title-weight: bold; --title-size: 12pt; --title-tracking: 0; --title-transform: none;
+  --num-display: none; --num-ink: var(--accent); --num-sep: ""; --title-rule-display: block;
+  --grid-gap: 4mm; --card-pad: 3.6mm 4mm; --card-border: 1px solid color-mix(in srgb, var(--accent) 30%, #fff); --card-top-border: 1px solid color-mix(in srgb, var(--accent) 30%, #fff); --radius: 4px;
+  --surface: color-mix(in srgb, var(--accent) 4%, #fff); --card-shadow: none; --card-title-ink: #0b0b0b;
+  --tag-border: color-mix(in srgb, var(--accent) 30%, #fff); --tag-bg: #ffffff; --tag-ink: #1d1d1d; --tag-prefix: "";
+  --heading-tracking: 0; --heading-transform: none; --project-mark: ""; --badge-bg: color-mix(in srgb, var(--accent) 12%, #fff); --badge-ink: #0b3d36;
+  --bullet: "\2022"; --bullet-ink: var(--accent);
+  --timeline-pad: 4mm; --timeline-line: 2px solid color-mix(in srgb, var(--accent) 30%, #fff); --roleline-ink: var(--accent); --roleline-weight: bold;
+  --footer-divider: color-mix(in srgb, var(--accent) 15%, #fff);
+}
+.skill p, .experience li, li { font-size: 8.8pt; }

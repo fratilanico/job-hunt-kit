@@ -1,0 +1,38 @@
+# --- personal data: never commit ---
+profile/*
+!profile/profile.example.yaml
+!profile/cv-source.example.md
+!profile/README.md
+.env
+.env.*
+*.env
+
+# CV outputs (keep the themes, template, sample and previews)
+cv/out/
+cv/*.pdf
+cv/*.png
+
+# tracker, discovery output, worker batches, driver runs
+data/*
+!data/applications.template.csv
+!data/README.md
+runs/
+
+# letters: only the guide and examples are shared
+letters/*
+!letters/GUIDE.md
+!letters/example*
+
+# browser state / secrets
+*.cookies
+cookies*.json
+storage-state*.json
+.auth/
+
+node_modules/
+.DS_Store
+__pycache__/
+*.pyc
+
+# per-job tailored CVs
+out/

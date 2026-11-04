@@ -1,0 +1,91 @@
+# Sample CV content. Placeholder only: used for theme previews and the ATS self-test.
+# Your real content goes in profile/cv.yaml (git-ignored), same shape.
+#
+# Inline markup inside any text:
+#   **text**   bold lead-in (use once at the start of a bullet: "**Lead:** rest")
+#   [[text]]   accent highlight for a number that carries the point (use sparingly)
+# Everything else is escaped. No em dashes (the ATS check fails on them).
+
+name: "Your Name"
+headline: "Senior Communications Manager :: Internal, Change & Executive Comms"
+contact:
+  location: "City, Country"
+  phone: "+44 7000 000000"
+  email: "you@example.com"
+  linkedin: "linkedin.com/in/your-handle"
+  website: "your-site.example"
+
+summary:
+  - "Communications manager with ten years in regulated organisations, most recently leading internal and change communications for a business of about 4,000 people. I turn complicated programmes into messages people act on, and I measure whether they did."
+  - "I have run communications for two restructures, a systems migration and a leadership change, built the channels and the measurement from scratch, and coached senior leaders on how to say difficult things plainly. Engagement on the main staff channel went from [[31% to 58%]] in a year."
+
+skills_title: "Core Skills"
+skills:
+  - title: "Internal & Change Comms"
+    body: "Programme communications plans, stakeholder mapping, leadership messaging, intranet and town halls, change readiness surveys."
+  - title: "Executive Communications"
+    body: "Speeches and briefings for the leadership team, all-staff updates, board papers, crisis and holding statements."
+  - title: "Content & Channels"
+    body: "Editorial calendars, newsletters, video scripts, social for employer brand, accessibility and plain-English standards."
+  - title: "Measurement"
+    body: "Channel analytics, pulse surveys, message testing, monthly reporting to the executive team with clear actions."
+
+approach:
+  title: "How I Work"
+  text: "Find out what people already believe, say the one thing that changes it, then check whether it landed."
+
+tags: ["Internal comms", "Change", "Executive comms", "Stakeholders", "Copywriting", "Intranet", "Analytics", "Crisis comms"]
+
+projects_title: "Selected Programmes"
+projects:
+  - title: "Systems Migration Programme"
+    badge: "2024 · 18 months"
+    bullets:
+      - "**Plan:** Built the communications plan for a finance and HR system migration affecting about 4,000 staff in six countries, with a network of 40 local champions."
+      - "**Result:** Training completion reached [[92%]] before go-live and support tickets in the first month came in at about half the forecast."
+      - "**Measurement:** Ran three readiness surveys and changed the plan after each one, which is where most of the gain came from."
+  - title: "Leadership Transition"
+    badge: "2023"
+    bullets:
+      - "**Messaging:** Wrote the announcement, the first 100 days narrative and the Q&A for a new chief executive, agreed with legal and the board in two weeks."
+      - "**Channels:** Organised eight site visits and a live all-staff session with about 2,500 attendees and an anonymous question tool."
+  - title: "Employer Brand Refresh"
+    badge: "2022"
+    bullets:
+      - "**Content:** Produced a series of short staff stories for careers pages and social, written with the people featured rather than about them."
+      - "**Result:** Applications per advertised role rose about [[20%]] over the following two quarters."
+
+experience_title: "Professional Experience"
+experience:
+  - company: "Company A"
+    date: "Mar 2021 to present"
+    role: "Senior Communications Manager"
+    bullets:
+      - "**Internal comms:** Lead a team of three covering internal, change and executive communications for a business of about 4,000 people."
+      - "**Channels:** Rebuilt the weekly staff update and the intranet home page; open rates went from [[31% to 58%]]."
+      - "**Change:** Communications lead for two restructures, delivered with no formal grievances about the process."
+      - "**Leadership:** Write and coach for the executive team, including quarterly results messages and town halls."
+  - company: "Company B"
+    date: "Jun 2017 to Feb 2021"
+    role: "Communications Manager"
+    subroles:
+      - title: "Communications Manager | 2019 to 2021"
+        bullets:
+          - "**Campaigns:** Planned and ran the internal side of a cost programme, with a monthly progress story and a feedback loop to the programme board."
+          - "**Crisis:** Wrote holding statements and staff briefings during an IT outage, out within 40 minutes of the first alert."
+      - title: "Communications Officer | 2017 to 2019"
+        bullets:
+          - "**Content:** Edited the staff magazine and moved it online, which cut print costs by about GBP 30,000 a year."
+  - company: "Company C"
+    date: "Sep 2014 to May 2017"
+    role: "Communications Assistant"
+    bullets:
+      - "**Support:** Managed the news pages, event logistics and media monitoring for a team of six."
+
+footer:
+  - title: "Education"
+    lines: ["BA (Hons) English", "University Name"]
+  - title: "Certifications"
+    lines: ["CIPR Internal Comms Diploma", "Plain English Course"]
+  - title: "Languages"
+    lines: ["English (native)", "Spanish (conversational)"]
